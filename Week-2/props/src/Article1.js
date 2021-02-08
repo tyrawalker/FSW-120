@@ -1,6 +1,6 @@
-import React from "React"
+import React from "react"
 
-function article (props){
+function Article1 (props){
     return (
     
     <div className="info-box">
@@ -12,4 +12,4 @@ function article (props){
 
     )
 }
-export default article
+export default Article1
