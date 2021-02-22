@@ -2,11 +2,14 @@
 import React from 'react'
 import './App.css';
 import blogPostData from './blogPostData'
-import blogPost from './blogPost'
+import BlogPost from './blogPost'
    
 function App() {
-  const post = blogPostData.map(blog => <title key= {blogPost.title} subtitle={blogPost.subtitle} author={blogPost.author} date={blogPost.date}/>)
+  const post = blogPostData.map(blog =><BlogPost key= {blog.title} title= {blog.title} subtitle={blog.subtitle} author={blog.author} date={blog.date}/>)
   
+
+  
+
   return (
       <div>
           {post}            
@@ -17,3 +20,5 @@ function App() {
 
 
 export default App;
+
+
