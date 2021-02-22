@@ -1,6 +1,6 @@
-
+import React from "react"
 import './App.css';
-import superHero from "./superHero"
+import SuperHero from "./superHero"
 import heroes from "./heroesData.json";
 
 class App extends React.Component{
@@ -17,8 +17,8 @@ class App extends React.Component{
   }
 
   render () {
-    {
-      const hero = heroes.map(heroes=><hero key= {superHero.name} superHero={superHero} handleChange={this.handleChange} />)
+    
+      const hero = heroes.map(heroes=><SuperHero key= {heroes.name} superHero={heroes.show} catchPhrase = {heroes.catchPhrase} imageName= {heroes.imageName} handleChange={this.handleChange} />)
     
     
     return (
@@ -26,9 +26,9 @@ class App extends React.Component{
         {hero}
       </div>
     )
-    }
+    
 
-  },
+  }
 
 }
 export default App;

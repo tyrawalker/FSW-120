@@ -1,16 +1,18 @@
 import React from "react"
 
-function superHero (props) {
-
+function SuperHero (props) {
+ var click= () =>{
+    alert (props.catchPhrase)
+ }
         return(
-            <div className = "super-Hero">
-                <p>{props.superHero.name}</p>
-                <p>{props.superHero.show}</p>
-                <p>{props.superHero.catchPhrase}</p>
-                onChange={() => console.log("Changed!")}
+            <div className = "super-Hero" onClick= {click} >
+                <p>{props.name}</p>
+                <p>{props.show}</p>
+                <img src={props.imageName}/> 
+                
             </div>
         )
 }
+ {/* image tags with ALT attribute sometimes fail in component files*/}
 
-
-export default superHero
+export default SuperHero

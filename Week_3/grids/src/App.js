@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 
 
-handleClick(){
+{/*handleClick(){
  //need help with event handlers and state
-}
+}*/}
 
 function App() {
+
+  // create function within the brackets
   return (
     <div className="grid-container">
 
