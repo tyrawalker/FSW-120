@@ -1,25 +1,42 @@
-import logo from './logo.svg';
+import {useState} from "react"
+import React from "react";
 import './App.css';
+import Tweet from "./components/tweetData"; 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  
+  state= {
+    id: Tweet.id, 
+   text: Tweet.text, 
+   author: Tweet.author,
+   date: Tweet.date
+  }
+
+  handleChange = (event) => {
+    event.preventDefault ()
+    const {name,value} = event.target
+    this.setState({
+        [name]:value
+    })
+
+    render(){
+      return (
+          <form>
+              <input 
+                  type="text" 
+                  value={this.state.name} 
+                  name="name" 
+                  placeholder="Name" 
+                  onChange={this.handleChange} 
+              />
+    
+              <h1>{this.state.firstName}</h1>
+          </form>
+      )
+    }
+    }
+    
 }
+  
 
 export default App;

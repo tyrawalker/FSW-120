@@ -1,8 +1,6 @@
 import React from "react"
-// import Calculator from "./components/calculator"
-  
- class App extends React.Component {
-    
+
+class App extends React.Component {
     state= {
         num1:0, 
         num2:0, 
@@ -15,7 +13,7 @@ import React from "react"
             [name]:value
         })
     }
-
+     
     addButton = () => {
         this.setState ({
             sum:Number(this.state.num1) + Number(this.state.num2)
@@ -55,9 +53,16 @@ import React from "react"
                <button onClick= {this.mulButton}>*</button>
                <button onClick= {this.divButton}>/</button>
                
-            </div>  
-          )
+                 </div>
+            )
+    
+
+
     }
+    
+    
+       
+
 
 }
 
