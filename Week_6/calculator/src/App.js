@@ -6,7 +6,7 @@ class App extends React.Component {
         num2:0, 
         sum:0    }
 
-    handleChange = (event) => {
+     handleChange = (event) => {
         event.preventDefault ()
         const {name,value} = event.target
         this.setState({

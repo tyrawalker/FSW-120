@@ -1,6 +1,6 @@
 import {v4 as uuid4} from "uuid";
 
-export const Tweet= [
+ const tweet= [
     {
         id:uuid4(), 
         text:"I swear nothing beats a good laugh...nothing!!!! Laughing is fucking amazing ....just literally laughed for about 10min straight at the dumbest shit ever", 
@@ -50,3 +50,5 @@ export const Tweet= [
         date:"23 September 2020"
     }
 ]
+
+export default tweet;
